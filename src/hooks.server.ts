@@ -6,9 +6,9 @@
 import { SvelteKitAuth } from "@auth/sveltekit"
 import Credentials from "@auth/core/providers/credentials"
 // Import the Cognito service that we created earlier
-import { getSession, refreshAccessToken, type CognitoUserSessionType } from "$lib/domains/auth/services/Cognito"
+import { getSession, refreshAccessToken, type CognitoUserSessionType } from "$lib/domain/auth/services/Cognito"
 // Type of the user object returned from the Cognito service
-import type AuthUser from "$lib/domains/auth/types/AuthUser";
+import type AuthUser from "$lib/domain/auth/types/AuthUser";
 // Import the secret key from the environment variables
 import { AUTH_SECRET } from "$env/static/private";
 interface AuthToken {

@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
-import { getAccount } from '$lib/domains/auth/api/getAccount';
+import { getAccount } from '$lib/domain/auth/api/getAccount';
 export const load: LayoutServerLoad = async ({ locals }) => {
   // Get the session from the locals
   const session = (await locals.getSession()) as any;
