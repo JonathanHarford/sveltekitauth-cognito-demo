@@ -1,12 +1,12 @@
 # sveltekitauth-cognito-demo
 
-This is Zain Sajjad's [SvelteKit Auth with AWS Cognito](https://blog.logrocket.com/sveltekit-auth-aws-cognito) tutorial with the following changes that seemed necessary to get it to work:
+This is Zain Sajjad's https://blog.logrocket.com/sveltekit-auth-aws-cognito[SvelteKit Auth with AWS Cognito] tutorial with the following changes that seemed necessary to get it to work:
 
-1. Per [Seamus Walsh's recommendation](https://blog.logrocket.com/sveltekit-auth-aws-cognito/#comment-37076), the versions of SveltekitAuth
+1. Per https://blog.logrocket.com/sveltekit-auth-aws-cognito/#comment-37076[Seamus Walsh's recommendation], the versions of SveltekitAuth
  and AuthCore have been pinned to 0.3.0: `pnpm install @auth/sveltekit@0.3.0 @auth/core@0.3.0`
 
 2. Changed `$lib/domains/auth/` references to `$lib/domain/auth/`. Seems like a typo?
 
-3. [Generated](https://generate-secret.vercel.app/32) and added AUTH_SECRET to .env file (of course, this was not committed)
+3. https://generate-secret.vercel.app/32[Generated] and added AUTH_SECRET to .env file (of course, this was not committed)
 
 Run with `pnpm dev`.
