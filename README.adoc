@@ -2,8 +2,8 @@
 
 This is Zain Sajjad's https://blog.logrocket.com/sveltekit-auth-aws-cognito[SvelteKit Auth with AWS Cognito] tutorial with the following changes that seemed necessary to get it to work:
 
-1. Per https://blog.logrocket.com/sveltekit-auth-aws-cognito/#comment-37076[Seamus Walsh's recommendation], the versions of SveltekitAuth
- and AuthCore have been pinned to 0.3.0: `pnpm install @auth/sveltekit@0.3.0 @auth/core@0.3.0`
+1. Following on from https://blog.logrocket.com/sveltekit-auth-aws-cognito/#comment-37076[Seamus Walsh's recommendation], the versions of SveltekitAuth
+ and AuthCore have been installed without @next: `pnpm install @auth/sveltekit @auth/core`
 
 2. Changed `$lib/domains/auth/` references to `$lib/domain/auth/`. Seems like a typo?
 
